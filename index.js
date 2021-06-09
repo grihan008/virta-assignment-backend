@@ -2,6 +2,7 @@ const { ApolloServer, gql } = require('apollo-server');
 const StationsAPI = require('./apis/stationsapi');
 
 const typeDefs = gql`
+  # Non nullable fields are just assumptions
   type Station {
     station_ID: Int!
     location_ID: Int
